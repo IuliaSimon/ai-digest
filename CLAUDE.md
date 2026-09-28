@@ -6,6 +6,7 @@ Flask-приложение: 10 карточек-объяснялок про ИИ
 - `app.py` — всё приложение: `/` рендерит `templates/index.html`, `/api/cards` отдаёт все карточки JSON, `/api/card/<id>` одну (404 с текстом «Карточка не найдена»).
 - `requirements.txt` — flask, gunicorn.
 - `Procfile` — `web: gunicorn app:app` (запуск на Heroku-подобном хостинге, порт из `PORT`).
+- `family_bot/` — отдельный личный Telegram-бот Юлии про её детей (см. `family_bot/README.md`). Данные детей только в `family_bot/data.json` на сервере, в репо не коммитить (`.gitignore`).
 
 ## Запуск локально
 ```bash
